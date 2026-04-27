@@ -1,163 +1,179 @@
-
 export default function Projects() {
   return (
-    <section className="space-y-6">
- <div className="bg-gray-900/70 backdrop-blur p-6 rounded-2xl shadow-xl border border-gray-800">
+    <div className="max-w-5xl mx-auto">
 
-  <h2 className="text-3xl font-bold">Secure E-Commerce Application</h2>
+      {/* TITLE */}
+      <h1 className="text-3xl md:text-4xl font-bold mb-2">
+        Secure E-Commerce Application
+      </h1>
 
-  {/* Problem */}
-  <div>
-    <h3 className="font-semibold text-xl">Problem Statement</h3>
-    <p className="text-gray-400">
-      Traditional e-commerce systems lack adaptive security. This project introduces
-      risk-based authentication using OTP and biometric verification.
+    <p className="text-blue-400 text-sm mb-4">
+      ⚡ Full-stack system with backend-driven security logic and AI-powered risk analysis
     </p>
-  </div>
-<div className="h-px bg-gray-800 my-8"></div>
-  {/* Tech */}
-  <div>
-    <h3 className="font-semibold text-xl">Technologies Used</h3>
-    <p className="text-gray-400">
-      Java, Spring Boot, MySQL, React, Tailwind, Flask
-    </p>
-  </div>
-<div className="h-px bg-gray-800 my-8"></div>
-  {/* Features */}
-  <div>
-    <h3 className="font-semibold text-xl">Features</h3>
-    <ul className="list-disc ml-6 text-gray-400">
-      <li>User authentication with OTP</li>
-      <li>Biometric verification for high-risk transactions</li>
-      <li>Cart, Orders, Checkout system</li>
-      <li>Risk-based fraud detection</li>
-    </ul>
-  </div>
-<div className="mt-8 space-y-4">
-<div className="h-px bg-gray-800 my-8"></div>
-  <h3 className="text-xl font-semibold">Transaction Flow</h3>
+      {/* IMPACT */}
+      <p className="text-green-400 text-sm mb-6">
+         Designed adaptive authentication system reducing fraud risk by introducing multi-level verification based on transaction behavior.
+      </p>
 
-  <ul className="text-gray-400 space-y-2 text-sm">
-    <li>🟢 Low Risk → Direct order placement</li>
-    <li>🟡 Medium Risk → OTP verification required</li>
-    <li>🔴 High Risk → Biometric authentication required</li>
-  </ul>
+      {/* PROBLEM */}
+      <div className="mb-8">
+        <h2 className="text-xl font-semibold mb-2">Problem Statement</h2>
+        <p className="text-gray-400">
+          Traditional e-commerce platforms lack adaptive security. All users follow the same authentication flow,
+          making systems vulnerable to fraud and unauthorized access.
+        </p>
+      </div>
 
-  <div className="h-px bg-gray-800 my-8"></div>
-<div className="mt-6">
-  <h3 className="text-xl font-semibold mb-3">Architecture</h3>
+      {/* SOLUTION */}
+      <div className="mb-8">
+        <h2 className="text-xl font-semibold mb-2">Solution</h2>
+        <p className="text-gray-400">
+          Implemented a risk-based authentication system where transaction behavior determines the security level:
+          low-risk → direct checkout, medium-risk → OTP verification, high-risk → biometric authentication.
+        </p>
+        <p className="text-gray-400 mt-2">
+        Designed a microservice-style architecture integrating Spring Boot backend with a Python-based AI service via REST APIs.
+      </p>
+      </div>
 
-  <div className="flex flex-wrap items-center gap-3 text-sm">
+      {/* TECH STACK */}
+      <div className="mb-8">
+        <h2 className="text-xl font-semibold mb-2">Technologies</h2>
+        <p className="text-gray-400">
+          Java • Spring Boot • MySQL • React • Tailwind • Flask
+        </p>
+      </div>
 
-    <span className="bg-gray-800 px-3 py-1 rounded">Spring Boot APIs(Backend)</span>
-    <span>→</span>
+      {/* ARCHITECTURE */}
+      <div className="mb-8">
+        <h2 className="text-xl font-semibold mb-3">Architecture</h2>
 
-    <span className="bg-gray-800 px-3 py-1 rounded">React (Frontend)</span>
-    <span>→</span>
+        <div className="bg-gray-900 border border-gray-800 rounded-xl p-4">
 
-    <span className="bg-gray-800 px-3 py-1 rounded">AI Biometric Service</span>
-    <span>→</span>
+          {/* IMAGE */}
+          <img
+            src="/images/architecture.png"
+            alt="System Architecture"
+            className="w-full h-30 object-contain rounded-lg"
+          />
 
-    <span className="bg-gray-800 px-3 py-1 rounded">MySQL</span>
+          {/* DESCRIPTION */}
+          <p className="text-xs text-gray-500 mt-2 text-center">
+            Backend → AI Service → Database interaction
+          </p>
 
-  </div>
-  <div className="h-px bg-gray-800 my-8"></div>
-</div>
+        </div>
 
-</div>
-  {/* Repo Links */}
-<div className="flex gap-4 flex-wrap mb-6">
+        {/* FLOW TEXT */}
+        <p className="mt-4 text-sm text-gray-300">
+          User → React Frontend → Spring Boot APIs → Risk Engine →
+          <span className="text-green-400"> Low Risk</span> /
+          <span className="text-yellow-400"> OTP</span> /
+          <span className="text-red-400"> Biometric</span> → MySQL
+        </p>
+      </div>
 
-  <a 
-    href="https://github.com/Abhishekmt18/secure-ecommerce-backend" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    className="bg-white text-black px-4 py-2 rounded hover:bg-gray-200 transition"
-  >
-    Backend Repo
-  </a>
+      {/* API DESIGN */}
+      <div className="mb-8">
+        <h2 className="text-xl font-semibold mb-2">API Design</h2>
+        <p className="text-gray-400 text-sm">
+          Built RESTful APIs for authentication, product management, cart operations, and order processing with secure backend validation.
+        </p>
+      </div>
 
-  <a 
-    href="https://github.com/Abhishekmt16/ecommerce-frontend" 
-    target="_blank"
-    rel="noopener noreferrer"
-    className="bg-white text-black px-4 py-2 rounded hover:bg-gray-200 transition"
-  >
-    Frontend Repo
-  </a>
+      {/* FEATURES */}
+      <div className="mb-8">
+        <h2 className="text-xl font-semibold mb-2">Key Features</h2>
+        <ul className="text-gray-400 list-disc pl-5 space-y-1">
+          <li>User authentication with OTP</li>
+          <li>Biometric verification for high-risk transactions</li>
+          <li>Cart, Orders, Checkout system</li>
+          <li>Risk-based fraud detection</li>
+          <li>RESTful API design for scalable backend</li>
+          <li>Integrated external Python microservice using REST communication</li>
+        </ul>
+      </div>
 
-  <a 
-    href="https://github.com/Abhishekmt16/ai-biometric-service" 
-    target="_blank"
-    rel="noopener noreferrer"
-    className="bg-white text-black px-4 py-2 rounded hover:bg-gray-200 transition"
-  >
-    AI Service
-  </a>
+      {/* FLOW */}
+      <div className="mb-8">
+        <h2 className="text-xl font-semibold mb-2">Transaction Flow</h2>
 
-</div>
-<div className="h-px bg-gray-800 my-8"></div>
-{/* Screenshots */}
-<div className="grid md:grid-cols-2 gap-6 mt-6">
+        <div className="space-y-2 text-sm">
+          <p className="text-green-400">🟢 Low Risk → Direct order placement</p>
+          <p className="text-yellow-400">🟡 Medium Risk → OTP verification</p>
+          <p className="text-red-400">🔴 High Risk → Biometric authentication</p>
+        </div>
+      </div>
 
-  <div className="bg-gray-900 rounded-lg p-3 hover:scale-[1.02] transition duration-300">
-    <p className="text-sm text-gray-400 mb-2">Login Page</p>
-    <img 
-      src="/images/login.png" 
-      className="w-full h-56 object-contain hover:scale-105 transition duration-300" 
-    />
-  </div>
+      {/* GITHUB */}
+      <div className="flex gap-4 mb-10">
+        <a href="https://github.com/Abhishekmt18/secure-ecommerce-backend" target="_blank" rel="noopener noreferrer"
+          className="bg-white text-black px-4 py-2 rounded-lg hover:bg-gray-200 transition hover:scale-105">
+          Backend
+        </a>
 
-  <div className="bg-gray-900 rounded-lg p-3 hover:scale-[1.02] transition duration-300">
-    <p className="text-sm text-gray-400 mb-2">Products Page</p>
-    <img 
-      src="/images/products.png" 
-      className="w-full h-56 object-contain hover:scale-105 transition duration-300" 
-    />
-  </div>
+        <a href="https://github.com/Abhishekmt16/ecommerce-frontend" target="_blank" rel="noopener noreferrer"
+          className="bg-white text-black px-4 py-2 rounded-lg hover:bg-gray-200 transition hover:scale-105">
+          Frontend
+        </a>
 
-  <div className="bg-gray-900 rounded-lg p-3 hover:scale-[1.02] transition duration-300">
-    <p className="text-sm text-gray-400 mb-2">Cart Page</p>
-    <img 
-      src="/images/cart.png" 
-      className="w-full h-56 object-contain hover:scale-105 transition duration-300" 
-    />
-  </div>
+        <a href="https://github.com/Abhishekmt16/ai-biometric-service" target="_blank" rel="noopener noreferrer"
+          className="bg-white text-black px-4 py-2 rounded-lg hover:bg-gray-200 transition hover:scale-105">
+          AI Service
+        </a>
+      </div>
 
-<div className="bg-gray-900 rounded-lg p-3 hover:scale-[1.02] transition duration-300">
-    <p className="text-sm text-gray-400 mb-2">Checkout (Low Risk)</p>
-    <img 
-      src="/images/checkout.png" 
-      className="w-full h-56 object-contain hover:scale-105 transition duration-300" 
-    />
-  </div>
+      {/* SCREENSHOTS */}
+      <h2 className="text-xl font-semibold mb-4">Screenshots</h2>
 
-  <div className="bg-gray-900 rounded-lg p-3 hover:scale-[1.02] transition duration-300">
-    <p className="text-sm text-gray-400 mb-2">Checkout (Medium Risk + OTP Verification)</p>
-    <img 
-      src="/images/otp.png" 
-      className="w-full h-56 object-contain hover:scale-105 transition duration-300" 
-    />
-  </div>
+      <div className="grid md:grid-cols-2 gap-6">
 
-  <div className="bg-gray-900 rounded-lg p-3 hover:scale-[1.02] transition duration-300">
-    <p className="text-sm text-gray-400 mb-2">High Risk → Biometric Authentication</p>
-    <img 
-      src="/images/biometric.png" 
-      className="w-full h-56 object-contain hover:scale-105 transition duration-300" 
-    />
-  </div>
+        {[
+          { title: "Login Page", src: "/images/login.png" },
+          { title: "Products Page", src: "/images/products.png" },
+          { title: "Cart Page", src: "/images/cart.png" },
+          { title: "OTP Verification", src: "/images/otp.png" },
+          { title: "Biometric Authentication", src: "/images/biometric.png" },
+          { title: "Orders Page", src: "/images/orders.png" },
+        ].map((img, i) => (
+          <div key={i}>
 
-  <div className="bg-gray-900 rounded-lg p-3 hover:scale-[1.02] transition duration-300">
-    <p className="text-sm text-gray-400 mb-2">Orders Page</p>
-    <img 
-      src="/images/orders.png" 
-      className="w-full h-56 object-contain hover:scale-105 transition duration-300" 
-    />
-  </div>
+            {/* TITLE */}
+            <p className="text-sm text-gray-300 mb-1 font-medium">
+              {img.title}
+            </p>
 
-</div>
-</div>
-</section>
+            {/* DESCRIPTION (NEW 🔥) */}
+            <p className="text-xs text-gray-500 mb-2">
+              {img.title === "Login Page" && "User logs into the system using credentials"}
+              {img.title === "Products Page" && "Browse products and add items to cart"}
+              {img.title === "Cart Page" && "Manage items before checkout"}
+              {img.title === "OTP Verification" && "Triggered for medium-risk transactions"}
+              {img.title === "Biometric Authentication" && "Triggered for high-risk transactions"}
+              {img.title === "Orders Page" && "View order history and details"}
+            </p>
+
+            {/* IMAGE */}
+            <img
+              src={img.src}
+              className="w-full h-56 object-contain bg-gray-900 p-2 rounded-lg hover:scale-105 transition"
+            />
+
+          </div>
+        ))}
+      
+            </div>
+{/* WHY THIS PROJECT */}
+      <div className="mt-10">
+        <h2 className="text-xl font-semibold mb-2">Why This Project Matters</h2>
+
+        <ul className="text-gray-400 list-disc pl-5 space-y-1">
+          <li>Demonstrates real-world backend architecture</li>
+          <li>Implements microservice communication (Java + Python)</li>
+          <li>Shows adaptive security workflows used in production systems</li>
+          <li>Strong focus on API design and system design</li>
+        </ul>
+      </div>
+    </div>
   );
 }

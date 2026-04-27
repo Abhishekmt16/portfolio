@@ -18,7 +18,7 @@ export default function Skills() {
         <div className="bg-gray-900 p-5 rounded-lg">
           <h3 className="font-semibold mb-2">Frontend</h3>
           <p className="text-gray-400 text-sm">
-            React, JavaScript, HTML, CSS, Tailwind
+            React, JavaScript, HTML, CSS
           </p>
         </div>
 
