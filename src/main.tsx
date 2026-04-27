@@ -6,5 +6,5 @@ import "./index.css"; // VERY IMPORTANT
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <BrowserRouter>
     <App />
-  </BrowserRouter>
+  </BrowserRouter> 
 );

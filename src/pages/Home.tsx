@@ -10,7 +10,7 @@ export default function Home() {
       {/* HERO */}
       <div className="flex flex-col items-center text-center mt-16">
 
-        <h1 className="text-6xl font-bold">Abhishek M T</h1>
+        <h1 className="text-5xl font-bold">ABHISHEK M T</h1>
 
         <p className="mt-4 text-gray-400 text-lg max-w-xl">
           Backend developer focused on building secure, scalable applications and clean system design
